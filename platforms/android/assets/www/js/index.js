@@ -82,7 +82,9 @@ var app = {
                                         options = new FileUploadOptions(),
                                         filePath = file.fullPath,
                                         fileOptions = file.fileOptions,
-                                        uploadUrl = "http://requestb.in/yg9wf6yg"; //"http://httpbin.org/post";
+                                        //uploadUrl = "http://requestb.in/yg9wf6yg"; //"http://httpbin.org/post"; //Original bin from Good
+                                        uploadUrl = "http://requestb.in/1me02xe1"; //Bin for BLAUD
+
                                     options.fileKey = "testFileKey";
                                     options.fileName = file.name;//"red_dot.png";
                                     options.mimeType = file.type;//"image/png";
