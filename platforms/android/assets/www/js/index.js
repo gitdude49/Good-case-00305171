@@ -83,15 +83,28 @@ var app = {
                                         filePath = file.fullPath,
                                         fileOptions = file.fileOptions,
                                         //uploadUrl = "http://requestb.in/yg9wf6yg"; //"http://httpbin.org/post"; //Original bin from Good
-                                        uploadUrl = "http://requestb.in/1me02xe1"; //Bin for BLAUD
 
-                                    options.fileKey = "testFileKey";
-                                    options.fileName = file.name;//"red_dot.png";
-                                    options.mimeType = file.type;//"image/png";
+                                        //uploadUrl = "http://requestb.in/1me02xe1"; //Bin for BLAUD
+                                        uploadUrl = "http://ds.schoonderwoerd.com:9080/api/foto"; //BLAUD development server @Urbaan
+
+                                    options.fileKey = "foto";
+                                    options.fileName = "foto_filename.png";
+                                    options.mimeType = "image/png";
                                     options.params = {
-                                        param1 : "value1",
-                                        param2 : "value2"
+                                        zaakId : "thisIsTheValueForZaakId",
+                                        categorie : "thisIsTheValueForCategorie"
                                     };
+
+                                     options.headers = {
+                                         "X-S-Username": "thisIsTheValueForX-S-Username",
+                                         "X-S-UserEmailAddress": "thisIsTheValueForX-S-UserEmailAddress",
+                                         "X-S-Platform": "thisIsTheValueForX-S-Platform",
+                                         "X-S-PlatformVersion": "thisIsTheValueForX-S-PlatformVersion",
+                                         "X-S-AppName": "thisIsTheValueForX-S-AppName",
+                                         "X-S-AppVersion": "thisIsTheValueForX-S-AppVersion",
+                                     }
+
+
                                     fileTransfer.upload(file.fullPath, uploadUrl, function (response) {
                                         alert('Response from server: ' + response.responseCode + ' ' + response.response);
                                         var p = document.createElement("P");
