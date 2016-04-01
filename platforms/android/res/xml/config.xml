@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.good.gd.example.pg.blank" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>BinaryData</name>
+    <access origin="*" />
+    <preference name="loglevel" value="DEBUG" />
+    <content src="index.html" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <hook src="hooks/appBeforePrepare.sh" type="before_prepare" />
+    <hook src="hooks/appAfterBuild.sh" type="after_prepare" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
+    <feature name="GDApplication">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDApplicationPlugin" />
+    </feature>
+    <feature name="GDStorage">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDStoragePlugin" />
+    </feature>
+    <feature name="GDInterAppCommunication">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDInterAppCommunicationPlugin" />
+    </feature>
+    <feature name="GDSocket">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDSocketPlugin" />
+    </feature>
+    <feature name="GDSQLite">
+        <param name="android-package" value="com.good.gd.cordova.plugins.database.GDSQLitePlugin" />
+    </feature>
+    <feature name="GDFileTransfer">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDFileTransferPlugin" />
+    </feature>
+    <feature name="GDTokenHelper">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDTokenHelperPlugin" />
+    </feature>
+    <feature name="GDPush">
+        <param name="android-package" value="com.good.gd.cordova.plugins.push.GDPushPlugin" />
+    </feature>
+    <feature name="GDAppKinetics">
+        <param name="android-package" value="com.good.gd.cordova.plugins.appkinetics.GDAppKineticsPlugin" />
+    </feature>
+    <feature name="GDHttpRequest">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDHttpRequestPlugin" />
+    </feature>
+    <feature name="GDXMLHttpRequest">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDXmlHttpRequestPlugin" />
+    </feature>
+    <feature name="GDSpecificPolicies">
+        <param name="android-package" value="com.good.gd.cordova.plugins.policy.GDSpecificPoliciesPlugin" />
+    </feature>
+    <feature name="GDServerSideServices">
+        <param name="android-package" value="com.good.gd.cordova.plugins.GDServerSideServicesPlugin" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>

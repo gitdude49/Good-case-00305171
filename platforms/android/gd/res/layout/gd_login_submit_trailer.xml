@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) Visto Corporation dba Good Technology, 2015. All Rights Reserved. -->
+<RelativeLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="28dp"
+          android:id="@+id/COM_GOOD_GD_TEE_ACTIVE_ICON"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginRight="14dp"
+          android:layout_marginLeft="14dp"
+          android:visibility="gone">
+
+      <ImageView
+              android:id="@+id/COM_GOOD_GD_TEE_ACTIVE_GLYPH"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:adjustViewBounds="true"
+              android:scaleType="fitCenter"
+              android:contentDescription="@null"
+              android:src="@drawable/good_logo_lock" />
+
+      <com.good.gd.widget.GDTextView
+              android:id="@+id/COM_GOOD_GD_TEE_ACTIVE_TEXT"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="8dp"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/COM_GOOD_GD_TEE_ACTIVE_GLYPH"
+              android:textColor="@color/gd_light_grey" />
+</RelativeLayout>

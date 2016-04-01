@@ -1,0 +1,3 @@
+include ':CordovaLib'
+
+include ':gd'
