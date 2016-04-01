@@ -1,6 +1,6 @@
 {
     "GDLibraryMode": "GDEnterprise",
-    "GDApplicationID":"com.good.gd.example.pg.blank",
+    "GDApplicationID":"com.blaud.gd.example.pg.blank",
     "GDApplicationVersion":"1.0.0.0",
     "GDConsoleLogger": [
         "GDFilterErrors_",
