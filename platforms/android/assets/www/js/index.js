@@ -85,7 +85,8 @@ var app = {
                                         //uploadUrl = "http://requestb.in/yg9wf6yg"; //"http://httpbin.org/post"; //Original bin from Good
 
                                         //uploadUrl = "http://requestb.in/1me02xe1"; //Bin for BLAUD
-                                        uploadUrl = "http://ds.schoonderwoerd.com:9080/api/foto"; //BLAUD development server @Urbaan
+                                        //uploadUrl = "http://ds.schoonderwoerd.com:9080/api/foto"; //BLAUD development server @Urbaan
+                                        uploadUrl = "http://mia-master.azurewebsites.net/api/foto"; //BLAUD development server @Azure
 
                                     options.fileKey = "foto";
                                     options.fileName = "foto_filename.png";
