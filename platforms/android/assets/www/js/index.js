@@ -103,8 +103,8 @@ var app = {
                                          "X-S-PlatformVersion": "thisIsTheValueForX-S-PlatformVersion",
                                          "X-S-AppName": "thisIsTheValueForX-S-AppName",
                                          "X-S-AppVersion": "thisIsTheValueForX-S-AppVersion",
+                                         "Authorization": "Basic " + btoa("user:superSecr")
                                      }
-
 
                                     fileTransfer.upload(file.fullPath, uploadUrl, function (response) {
                                         alert('Response from server: ' + response.responseCode + ' ' + response.response);
